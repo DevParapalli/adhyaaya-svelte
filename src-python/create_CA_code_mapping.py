@@ -40,7 +40,7 @@ def escape(string):
 
 cas = {}
 print('[INFO] Writing JSON Document...')
-with open(parent_folder / f'cas-{int(float(time())*100)}.json', 'w', encoding="utf-8") as f:
+with open(parent_folder / f'cas.json', 'w', encoding="utf-8") as f:
     print('[INFO] Fetching Registrations...')
     snapshots = list(ca_client.collection('users').get())
     print('[INFO] Registraions Fetched')
@@ -52,7 +52,7 @@ with open(parent_folder / f'cas-{int(float(time())*100)}.json', 'w', encoding="u
 print('[INFO] Finished Writing JSON Document')
 
 cac = {}
-with open(parent_folder / f'cas-registrations-{int(float(time())*100)}.json', 'w', encoding="utf-8") as f:
+with open(parent_folder / f'cas-registrations.json', 'w', encoding="utf-8") as f:
     snapshots = list(ca_client.collection('ca_code').get())
     for snapshot in snapshots:
         cac[snapshot.id] = snapshot.to_dict()
@@ -61,7 +61,7 @@ with open(parent_folder / f'cas-registrations-{int(float(time())*100)}.json', 'w
 
 _LINE = "user_id, ca_code, first_name, last_name, phone, city, college_name, address, country, about, tasks_completed, registrations"
 
-with open(parent_folder / f'cas-{int(float(time())*100)}.csv', 'w', encoding="utf-8") as f:
+with open(parent_folder / f'cas.csv', 'w', encoding="utf-8") as f:
     f.write(_LINE + '\n')
     for [key, value] in cas.items():
         code = key[:7]

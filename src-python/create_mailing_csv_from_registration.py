@@ -5,7 +5,7 @@ parent_folder = this_folder.parent
 
 
 # Rename this file a/c to latest backup
-REGISTRATION_FILE = parent_folder / 'registrations-164730643373.json'
+REGISTRATION_FILE = parent_folder / 'registrations.json'
 
 
 def unfucknames(name: str):
@@ -38,5 +38,4 @@ def main(registration_file):
                 f.write(unfucknames(regis['name']) + "," + regis['email'] + '\n')
 
 
-if __name__ == "__main__":
-    main(REGISTRATION_FILE)
+main(REGISTRATION_FILE)
