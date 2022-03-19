@@ -192,7 +192,8 @@ html {
   position: relative;
   /* left: 15vw; */
   width: 300px;
-  height: 400px;
+  height: 360px;
+  font-size: small;
   margin: 10px;
   background: linear-gradient(rgb(225, 150, 58), rgb(227, 144, 91));
   transition: 0.6s;
@@ -202,7 +203,6 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-
   transform: rotatex(75deg) translatey(-200px) translatez(-100px);
   box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
 }
@@ -231,7 +231,7 @@ html {
 .card1 img {
   transform: translateY(15px);
   width: 160px;
-  height: 150px;
+  height: 140px;
 }
 .cards_heads {
   font-size: 25px;
@@ -255,7 +255,8 @@ html {
   position: relative;
   /* left: 43vw; */
   width: 300px;
-  height: 400px;
+  height: 360px;
+  font-size: small;
   margin: 10px;
   background: linear-gradient(rgb(93, 94, 170), rgb(93, 66, 103));
   border-radius: 15px;
@@ -280,7 +281,7 @@ html {
 .card2 img {
   transform: translateY(15px);
   width: 200px;
-  height: 180px;
+  height: 140px;
 }
 .card2 h3 {
   margin: 15px 0px 20px 0px;
@@ -290,7 +291,8 @@ html {
   position: relative;
   /* right: 15vw; */
   width: 300px;
-  height: 400px;
+  height: 360px;
+  font-size: small;
   margin: 10px;
   background: linear-gradient(#ff5252, #b33939);
   border-radius: 15px;
@@ -314,7 +316,7 @@ html {
 .card3 img {
   transform: translateY(15px);
   width: 230px;
-  height: 150px;
+  height: 140px;
 }
 
 .registration_page {
@@ -559,7 +561,7 @@ p {
   padding: 60% 5% 5% 5%;
   width: 80%;
   margin-left: 0%;
-  font-size: large;
+  font-size: normal;
 }
 
 .open-content .text a {
