@@ -19,7 +19,7 @@ export const event_name_mapping = {
     MUNU: 'Model United Nations Lok Sabha',
     COV: 'Code Venture',
     CSW: 'Spectrum',
-    UPG: 'Upgrad',
+    UPG: 'Campus Bridge',
     AVK: 'Avishkar',
     TSI: 'Jigyasa',
     COS: 'CAD-O-Shop',

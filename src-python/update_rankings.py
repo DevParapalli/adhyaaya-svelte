@@ -1,3 +1,4 @@
+from random import randint, random
 from firebase_admin import firestore
 import json
 from dateutil.parser import parse
@@ -42,7 +43,7 @@ batch = ca_client.batch()
 for user_id, details in CAS.items():
     iter_ref = ca_client.collection('users').document(user_id)
     code = user_id[:7]
-    rank = details['rank']
+    rank = 30 + randint(0, 120) 
     if code in CA_CODES:
         rank = RANKS.index((code, CA_CODES[code])) # We ignore the first rank, cuz its the default registration code.
     details['rank'] = rank

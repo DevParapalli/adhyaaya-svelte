@@ -35,7 +35,9 @@ def main(registration_file):
         with open(parent_folder / f'{event}.csv', 'w') as f:
             # f.write('\n'.join([','.join(registration.keys()) for registration in sorted_regis]))
             for regis in sorted_regis:
-                f.write(unfucknames(regis['name']) + "," + regis['email'] + '\n')
+                f.write(
+                    unfucknames(regis['name']) + "," + regis['phone'] + "," + regis['email'] + "," + regis['college'] + '\n'
+                    )
 
 
 main(REGISTRATION_FILE)
