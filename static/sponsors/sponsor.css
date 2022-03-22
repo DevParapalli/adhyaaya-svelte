@@ -250,6 +250,7 @@ body {
   height: 100%;
   background: linear-gradient(#2c0c42,#b1132d);
   clip-path: circle(20% at -10% 15%);
+  z-index: -1;
 }
 
 .sideCompartment::after{
@@ -262,6 +263,7 @@ body {
   height: 100%;
   background: linear-gradient(#9b0a22,#2c0c42);
   clip-path: circle(23% at right 65%);
+  z-index: -1;
 }
 
 .content{
@@ -270,6 +272,7 @@ body {
   font: 2.3rem;
   color: #f5f5f5;
   padding: 0.75rem;
+  z-index: 2000;
 }
 
 .alignSide{
@@ -353,7 +356,7 @@ body {
     justify-content: stretch;
     margin-bottom: 1.8rem;
   }
-  .sideCompartment::before{
+  /* .sideCompartment::before{
     content: '';
     position: absolute;
     top: 0;
@@ -361,7 +364,7 @@ body {
     width: 100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#2c0c42c7,#b1132dc0);
+    background:linear-gradient(#2c0c42,#b1132d);
     clip-path: circle(20% at -10% 15%);
   }
   .sideCompartment::after{
@@ -372,9 +375,9 @@ body {
     width: 100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#9b0a22bd,#2c0c42bd);
+    background:linear-gradient(#9b0a22,#2c0c42);
     clip-path: circle(23% at right 65%);
-  }
+  } */
 
   .alignSide{
     margin-left: 0rem;
