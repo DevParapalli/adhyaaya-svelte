@@ -39,7 +39,7 @@
         "prettier": "^2.4.1",
         "prettier-plugin-tailwindcss": "^0.1.7",
         "sass": "^1.46.0",
-        "svelte": "^3.44.0",
+        "svelte": "^3.49.0",
         "svelte-check": "^2.2.6",
         "svelte-preprocess": "^4.10.1",
         "tailwind-scrollbar-hide": "^1.1.7",
